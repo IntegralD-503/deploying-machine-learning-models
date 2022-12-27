@@ -2,7 +2,7 @@ version: 2
 
 defaults: &defaults
   docker:
-    - image: circleci/python
+    - image: cimg/python
   working_directory: ~/project
 
 prepare_venv: &prepare_venv
