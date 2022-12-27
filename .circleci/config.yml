@@ -2,14 +2,14 @@ version: 2
 
 defaults: &defaults
   docker:
-    - image: cimg/python:3.9.14
+    - image: cimg/python:3.11
   working_directory: ~/project
 
 prepare_venv: &prepare_venv
   run:
     name: Create venv
     command: |
-      python -m venv venv
+      python3 -m venv venv
       source venv/bin/activate
       pip install --upgrade pip
 
